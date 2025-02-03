@@ -19,6 +19,10 @@ namespace CsharpTraining_jan2725
 
         public String Network { get; set; }
 
+        public Transaction()
+        {
+
+        }
         public Transaction(int id,double source,double destination,String date,String status,String network)
         {
             Id = id;

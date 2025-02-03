@@ -9,7 +9,6 @@ using CsharpTraining_jan2725;
 
 
 
-
 // Day -2 
 
 //ArrayProg ar = new ArrayProg();
@@ -371,8 +370,67 @@ foreach(KeyValuePair<int,String> item in books)
 //t12.CreateTransaction();
 
 
+//day -6
+// Assignments
+
+//SecondLargestElementArray sl = new SecondLargestElementArray();
+//int[] arr = {12,35,1,10,34,1 };
+//int[] arr2 = { 10,5,10};
+//int[] arr3 = { 10,10,10};
+//int result = sl.findSecondLargest(arr3);
+//Console.WriteLine(result);
 
 
+//MaxConsecutiveOnesCount max = new MaxConsecutiveOnesCount();
+//int[] arr = {1,1,0,0,1,0,1,0,1,1,1,1};
+//Console.WriteLine("Maximum consecutive is: "+max.MaxConsecutiveElements(arr,1));
+
+//int[] arr2 = { 0,0,1,0,1,0,1,0,1,0,1};
+//Console.WriteLine("Maximun Consecutive is: "+max.MaxConsecutiveElements(arr2,0));
+
+//MissingAndRepeatingArr mr = new MissingAndRepeatingArr();
+//int[] arr2 = { 4,3,6,2,1,1};
+//int[] arr = { 3, 1, 3 };
+//mr.findMisssingAndRepeating(arr2,6); 
+
+//DuplicateCharacterInString dc = new DuplicateCharacterInString();
+//string str = "google";  // Console.ReadLine().ToLower()   - for case insensitivity.    
+//dc.findDuplicate(str);
+
+//UniqueCharInStr uc = new UniqueCharInStr();
+//string str = "google";
+//uc.GetUniqueCharacters(str);
+
+//ReverseEachWordInStr rw = new ReverseEachWordInStr();
+//string str = "My name is Vasu";
+//rw.reverseEachWord(str);
+
+//ExtractNumericCharacters enc = new ExtractNumericCharacters();
+//string[] arr = { "apple1", "banana2", "cherry3" };
+//enc.extractNumberFromString(arr);
+
+//Transaction t = new Transaction();
+//t.ReadTransaction();
+
+//Network n = new Network();
+//n.ReadDateFromFile();
+
+
+// Day -7
+
+DelegateDemo d1 = new DelegateDemo();
+
+//DelegateExample d2 = DelegateDemo.stay;
+//DelegateExample d3 = new DelegateExample(DelegateDemo.edu);
+//DelegateExample d4 = d1.course;
+//d2();
+//d3();
+//d4();
+
+delmethod d5 = new delmethod(DelegateDemo.add);
+
+
+ 
 
 
 
