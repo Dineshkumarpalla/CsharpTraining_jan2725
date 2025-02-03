@@ -420,6 +420,7 @@ foreach(KeyValuePair<int,String> item in books)
 
 DelegateDemo d1 = new DelegateDemo();
 
+// SingleCast delegate
 //DelegateExample d2 = DelegateDemo.stay;
 //DelegateExample d3 = new DelegateExample(DelegateDemo.edu);
 //DelegateExample d4 = d1.course;
@@ -427,10 +428,43 @@ DelegateDemo d1 = new DelegateDemo();
 //d3();
 //d4();
 
-delmethod d5 = new delmethod(DelegateDemo.add);
+// Multicast delegate
+//delmethod d5 = new delmethod(DelegateDemo.add);
+//d5 += new delmethod(d1.sub);
+//d5(20,30);
+//d5 -= new delmethod(DelegateDemo.add);
+//d5(10,40);
+
+// SingleCast delegate Event
+//d1.MyEvent += new MyDelegate(d1.Display);
+//d1.RaiseEvent();
+
+// MultiCast delegate Event
+//d1.MyEvent += new MyDelegate(DelegateDemo.add);
+//d1.MyEvent += new MyDelegate(d1.sub);
+//d1.RaiseEvent(5,7);
 
 
- 
+
+//FuncActionPredecate fap1 = new FuncActionPredecate();
+//assigning function as parameter as delegate
+//FuncActionPredecate.InvokeDelegate(FuncActionPredecate.PrintNumber, 35);
+// assigning method to Func as a paramter /
+//int res=FuncActionPredecate.PerformOperation(FuncActionPredecate.Square, 5);
+//Console.WriteLine(res);
+//  assigning method to Action as a paramter
+//FuncActionPredecate.PerformOperation(FuncActionPredecate.PrintMessage,"Hello Dinesh, All is well");
+// assigning method to Predicate as a parameter
+//bool res=FuncActionPredecate.PerformOperation(FuncActionPredecate.isEven,4);
+//Console.WriteLine(res);
+
+
+
+
+
+
+
+
 
 
 
