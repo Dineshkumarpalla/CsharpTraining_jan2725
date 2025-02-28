@@ -1,10 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System.Collections;
+using System.Text;
+using System.Linq;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.ExceptionServices;
+using System.Runtime.Intrinsics.Arm;
 using CsharpTraining_jan2725;
 
 
@@ -418,7 +421,7 @@ foreach(KeyValuePair<int,String> item in books)
 
 // Day -7
 
-DelegateDemo d1 = new DelegateDemo();
+// DelegateDemo d1 = new DelegateDemo();
 
 // SingleCast delegate
 //DelegateExample d2 = DelegateDemo.stay;
@@ -459,7 +462,96 @@ DelegateDemo d1 = new DelegateDemo();
 //Console.WriteLine(res);
 
 
+// Day-10
 
+//IPaymentProviderFactory factory = new PayPalFactory(); //new StripeFactory
+//IPaymentProvider provider = factory.CreatePaymentProvider();
+//provider.ProcessPayment(100.00m);
+
+
+// Day-12
+
+//SwapProgram sp1 = new SwapProgram();
+//int a = 15, b = 19;
+//sp1.Swap(ref a, ref b);
+//Console.WriteLine("A Value is: "+a +" B Value is: "+b);
+//String s1 = "Dinesh", s2 = "Kumar";
+//sp1.Swap(ref s1,ref s2);
+//Console.WriteLine("s1 Value is: " + s1 + " s2 Value is: " + s2);
+//Boolean f1 = true, f2 = false;
+//sp1.Swap(ref f1,ref f2);
+//Console.WriteLine("f1 Value is: " + f1 + " f2 Value is: " + f2);
+
+//ListExample li = new ListExample();
+//li.ShowNames();
+
+// new EmpExample().ShowEmploy();
+
+//DelegateExample d1 = new DelegateExample();
+//MyDelegate3 del1 =new MyDelegate3(d1.Greeting);
+//del1("Dinesh");
+
+//del1 += d1.Course;
+//del1 -= d1.Greeting;
+////del1("CSharpFS");
+
+//del1 += DelegateExample.EndDate;
+//del1("feb20");
+
+
+// feb-9 th programs on exception Handling
+
+//Practice1 p1 = new Practice1();
+//int a = 14, b = 10;
+//Console.WriteLine($"Before Swap: a value is: {a}, b value is: {b}");
+//p1.Swap(ref a,ref b);
+//Console.WriteLine($"After Swap: a value is: {a}, b value is: {b}");
+
+//string s1 = "Dinesh", s2 = "Kumar";
+//Console.WriteLine($"Before Swap: s1: {s1}, s2: {s2}");
+//p1.Swap(ref s1, ref s2);
+//Console.WriteLine($"After Swap: s1: {s1}, s2: {s2}");
+
+//Boolean b1 = true, b2 = false;
+//Console.WriteLine($"Before Swap: b1 is: {b1}, b2 is: {b2}");
+//p1.Swap(ref b1, ref b2);
+//Console.WriteLine($"After Swap: b1 is: {b1}, b2 is: {b2}");
+
+
+//Practice2 p2 = new Practice2();
+//p2.ShowNames();
+
+//Practice3 p3 = new Practice3();
+//p3.showEmploy();
+
+
+//string s1 = "Dinesh ";
+//s1.Concat("Kumar");
+//Console.WriteLine(s1);
+
+//StringBuilder s2 = new StringBuilder("Dotnet ");
+//s2.Append("Full stack");
+//Console.WriteLine(s2);
+
+
+
+//Excep1 e1 = new Excep1();
+//e1.runExcep1();
+
+
+//Excep2.runExcep2();
+
+//ElectionExcep1 ee2 = new ElectionExcep1();
+//ee2.runExcep();
+
+// Dotnet Day - 1 programs
+
+//Day1 d1 = new Day1();
+//d1.posNeg();
+
+//Day1.Max3();
+
+Day1.sumSub();
 
 
 
